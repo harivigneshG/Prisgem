@@ -3,5 +3,7 @@
 *.egg-info
 *.swp
 tags
-node_modules
+prisgem/docs/current
+node_modules/
+prisgem/public/dist/*
 __pycache__
