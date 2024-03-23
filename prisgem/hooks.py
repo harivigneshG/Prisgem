@@ -1,9 +1,12 @@
+from . import __logo__ as app_logo
+
 app_name = "prisgem"
 app_title = "Prisgem"
 app_publisher = "Harivignesh G"
 app_description = "Frappe Tweaker"
 app_email = "harivignesh472@gmail.com"
 app_license = "mit"
+app_logo_url = '/assets/prisgem/images/prism.jpg'
 # required_apps = []
 
 # Includes in <head>
@@ -11,7 +14,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/prisgem/css/prisgem.css"
-# app_include_js = "/assets/prisgem/js/prisgem.js"
+app_include_js = ["prisgem.bundle.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/prisgem/css/prisgem.css"
@@ -63,6 +66,15 @@ app_license = "mit"
 # 	"methods": "prisgem.utils.jinja_methods",
 # 	"filters": "prisgem.utils.jinja_filters"
 # }
+
+# website_context = {
+# 	"favicon": app_logo or "'/assets/prisgem/images/prism.jpg'",
+# 	"splash_image": app_logo or "'/assets/prisgem/images/prism.jpg'"
+# }
+
+
+# Boot Info
+extend_bootinfo = "prisgem.boot.set_bootinfo"
 
 # Installation
 # ------------

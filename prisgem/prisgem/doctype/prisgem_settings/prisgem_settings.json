@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-19 14:54:09.935778",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prisgem_settings_tab",
+  "navbar_section",
+  "app_name",
+  "column_break_hmwi",
+  "navbar_background_color",
+  "prisgem_tweaker_section",
+  "hide_help_menu",
+  "hide_notification_bell",
+  "column_break_bzqa",
+  "enable_full_width",
+  "avoid_onboarding",
+  "tab_2_tab",
+  "app_logo",
+  "logo_width_pixels",
+  "logo_height_pixels"
+ ],
+ "fields": [
+  {
+   "fieldname": "app_name",
+   "fieldtype": "Data",
+   "label": "App Name"
+  },
+  {
+   "fieldname": "prisgem_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prisgem Settings"
+  },
+  {
+   "fieldname": "navbar_section",
+   "fieldtype": "Section Break",
+   "label": "Navbar "
+  },
+  {
+   "fieldname": "column_break_hmwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Hex Code \nEx: #4682B4",
+   "fieldname": "navbar_background_color",
+   "fieldtype": "Data",
+   "label": "Navbar Background Color"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "prisgem_tweaker_section",
+   "fieldtype": "Section Break",
+   "label": "Prisgem Tweaker"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_full_width",
+   "fieldtype": "Check",
+   "label": "Enable Full Width"
+  },
+  {
+   "default": "0",
+   "fieldname": "hide_help_menu",
+   "fieldtype": "Check",
+   "label": "Hide Help Menu"
+  },
+  {
+   "description": "Attach the logo as public",
+   "fieldname": "app_logo",
+   "fieldtype": "Attach",
+   "label": "App Logo"
+  },
+  {
+   "fieldname": "logo_height_pixels",
+   "fieldtype": "Int",
+   "label": "Logo Height (Pixels)"
+  },
+  {
+   "fieldname": "logo_width_pixels",
+   "fieldtype": "Int",
+   "label": "Logo Width (Pixels)"
+  },
+  {
+   "default": "0",
+   "fieldname": "hide_notification_bell",
+   "fieldtype": "Check",
+   "label": "Hide Notification Bell"
+  },
+  {
+   "default": "0",
+   "fieldname": "avoid_onboarding",
+   "fieldtype": "Check",
+   "label": "Avoid Onboarding"
+  },
+  {
+   "fieldname": "column_break_bzqa",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-20 17:44:02.870853",
+ "modified_by": "Administrator",
+ "module": "Prisgem",
+ "name": "Prisgem Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
