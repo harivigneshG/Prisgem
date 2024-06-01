@@ -42,7 +42,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "Hex Code \nEx: #4682B4",
+   "description": "Hex Code \nEx: #e0eece",
    "fieldname": "navbar_background_color",
    "fieldtype": "Data",
    "label": "Navbar Background Color"
@@ -59,6 +59,7 @@
   },
   {
    "default": "0",
+   "description": "Toggle enables to all users",
    "fieldname": "enable_full_width",
    "fieldtype": "Check",
    "label": "Enable Full Width"
@@ -105,7 +106,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-03-20 17:44:02.870853",
+ "modified": "2024-06-01 16:27:43.729956",
  "modified_by": "Administrator",
  "module": "Prisgem",
  "name": "Prisgem Settings",

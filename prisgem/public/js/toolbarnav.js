@@ -21,21 +21,20 @@ class Toolbarnav extends frappe.ui.toolbar.Toolbar{
             $('.dropdown-notifications').attr('style', 'display: none !important');
         }  
 
-		this.toggle_full_width();
+		this.set_toggle_full_width();
     }
 
-	toggle_full_width() {
+	set_toggle_full_width() {
 		if (frappe.boot.prisgem_settings.enable_full_width) {
-			localStorage.container_fullwidth = "true";
-			$(document.body).toggleClass("full-width", true);
-		} else {
 			localStorage.container_fullwidth = "false";
 			$(document.body).toggleClass("full-width", false);
+		} else {
+			localStorage.container_fullwidth = "true";
+			$(document.body).toggleClass("full-width", true);
 		}
 		$(document.body).trigger("toggleFullWidth");
 	}
 }
 
 frappe.ui.toolbar.Toolbar = Toolbarnav;
-
 
