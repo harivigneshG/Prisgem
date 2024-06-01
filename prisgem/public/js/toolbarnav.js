@@ -21,33 +21,18 @@ class Toolbarnav extends frappe.ui.toolbar.Toolbar{
             $('.dropdown-notifications').attr('style', 'display: none !important');
         }  
 
-
-		this.set_toggle_width();
-		// $('.navbar').css('background-color', "#264135")
-		
-       
+		this.toggle_full_width();
     }
 
-	set_toggle_width(){
+	toggle_full_width() {
 		if (frappe.boot.prisgem_settings.enable_full_width) {
-			console.log(frappe.boot.prisgem_settings)
-
-			$(document).ready(function() {
-				console.log(frappe.boot.prisgem_settings)
-				let fullwidth = "true";
-				$(document.body).toggleClass("full-width", fullwidth);
-				$(document.body).trigger("toggleFullWidth");
-			});
-	}
-	// else{
-	// 	$(document).ready(function() {
-	// 		let fullwidth = "false";
-	// 		$(document.body).toggleClass("full-width", fullwidth);
-	// 		$(document.body).trigger("toggleFullWidth");
-	// 	});
-
-	// }
-		
+			localStorage.container_fullwidth = "true";
+			$(document.body).toggleClass("full-width", true);
+		} else {
+			localStorage.container_fullwidth = "false";
+			$(document.body).toggleClass("full-width", false);
+		}
+		$(document.body).trigger("toggleFullWidth");
 	}
 }
 
