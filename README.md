@@ -2,7 +2,6 @@
 
 A tiny app customize the Frappe's Admin UI / desk 
 
-
 **Features**:
 * Modify App Logo
 * Hide Help / Notification Menu
