@@ -1,0 +1,55 @@
+#calendar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.calendar-header h2 {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.calendar-weekdays, .calendar-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.calendar-weekdays div {
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 2px solid #ddd;
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ddd;
+	min-height: 80px;
+}
+
+.day h3 {
+	margin: 0;
+}
+
+.day.empty {
+	border: none;
+}
+
+.count {
+	margin-top: 5px;
+}
+
+.count-positive {
+	color: green;
+	font-weight: bold;
+}
+
+.count-zero {
+	color: red;
+	font-weight: bold;
+}
