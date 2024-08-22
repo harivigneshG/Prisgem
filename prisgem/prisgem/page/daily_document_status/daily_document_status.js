@@ -68,7 +68,6 @@ frappe.pages['daily-document-status'].on_page_load = function(wrapper) {
 					},
 					callback: (r) => {
 						generate_calender(r.message)
-						
 					}
 				});
 			}
