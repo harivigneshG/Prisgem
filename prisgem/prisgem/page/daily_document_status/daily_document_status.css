@@ -53,3 +53,8 @@
 	color: red;
 	font-weight: bold;
 }
+
+.day.today {
+    background-color: #f0f8ff;
+    border: 2px solid #1e90ff;
+}
