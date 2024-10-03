@@ -5,6 +5,15 @@ frappe.pages['daily-document-status'].on_page_load = function(wrapper) {
 		single_column: true
 	});
 
+	frappe.breadcrumbs.add({
+        module: 'prisgem',
+        doctype: 'Page',
+        type: 'Custom',
+        label: 'Document Count',
+        route: '/app/page'
+    });
+
+
 	let Year = page.add_field({
 		label: 'Year',
 		fieldtype: 'Select',
