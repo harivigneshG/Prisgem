@@ -4,6 +4,7 @@ import frappe
 def calculate_doc_count(year, month,doc):
     
     table_name = f"tab{doc}"
+    
     counts = frappe.db.sql(f"""
         WITH RECURSIVE DateSeries AS (
             SELECT DATE_FORMAT(CONCAT(%(year)s, '-', %(month)s, '-01'), '%%Y-%%m-01') AS date
@@ -28,6 +29,5 @@ def calculate_doc_count(year, month,doc):
         "month": month
     }, as_dict=1)
 
-    print(counts)
     return counts
 
