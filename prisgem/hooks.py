@@ -16,6 +16,18 @@ app_logo_url = '/assets/prisgem/images/prism.jpg'
 # app_include_css = "/assets/prisgem/css/prisgem.css"
 app_include_js = ["prisgem.bundle.js"]
 
+# required_apps = []
+
+add_to_apps_screen = [
+	{
+		"name": app_name,
+		"logo": app_logo_url,
+		"title": app_title,
+		"route": "/app/prisgem-settings",
+		"has_permission": "prisgem.api.check_app_permission",
+	}
+]
+
 # include js, css files in header of web template
 # web_include_css = "/assets/prisgem/css/prisgem.css"
 # web_include_js = "/assets/prisgem/js/prisgem.js"
